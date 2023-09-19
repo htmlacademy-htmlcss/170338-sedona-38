@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Anton Bogza](https://up.htmlacademy.ru/htmlcss/38/user/170338).
-* Наставник: `Неизвестно`.
+* Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
 
 ---
 
