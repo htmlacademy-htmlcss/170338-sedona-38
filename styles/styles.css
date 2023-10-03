@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans-400.woff2) format(woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans-700.woff2) format(woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Backgrounds */
+  --background-page-color: #F2F2F2;
+  --background-basic-color: #ffffff;
+  --background-main-color: #82b3d3;
+  --background-secondary-color: #83b3d31f;
+  --background-secondary-accent-color: #83b3d333;
+
+  /* Texts */
+  --text-main-color: #000000;
+  --text-secondary-color: #333333;
+  --text-background-color: #ffffff;
+  --text-background-small-color: #ffffff4d;
+  --text-error-color: #ff5757;
+
+  /* Buttons */
+  --button-main-color: #756157;
+  --button-secondary-color: #82b3d3;
+  --button-secondary-success-color: #7db54f;
+
+  /* Inputs */
+  --input-main-color: #3f5e72;
+  --input-element-color: #e5e5e5;
+  --input-element-secondary-color: #f2f2f2;
+
+  /* Icons */
+  --icon-main-color: #000000;
+  --icon-secondary-color: #83b3d3;
+  --icon-secondary-success-color: #7db54f;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: var(--background-page-color);
+  color: var(--text-main-color);
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button-primary {
+  background-color: var(--button-main-color);
+  color: var(--text-background-color);
+  border-radius: 4px;
+  padding: 8px 50px;
+}
+
+.button-secondary {
+  background-color: var(--button-secondary-color);
+  color: var(--text-background-color);
+  padding: 8px 50px;
+}
+
+.container {
+  box-sizing: border-box;
+  background-color: var(--background-basic-color);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-container {
+  padding: 0 70px;
+}
+
+.main-navigation-list {
+  list-style: none;
+  padding: 0;
+}
+
+.main-navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.activities {
+  list-style: none;
+  padding: 0;
+}
+
+.favorite-count {
+  color: var(--text-background-color);
+  background-color: var(--button-secondary-success-color);
+  text-align: center;
+  font-size: 10px;
+  line-height: 10px;
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.hero {
+  box-sizing: border-box;
+  background-image: url(../images/hero-background.jpg);
+  background-color: var(--background-basic-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1200px;
+  height: 485px;
+  padding-top: 51px;
+  margin-bottom: 69px;
+}
+
+.hero-title {
+  display: block;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+}
+
+.card-primary {
+  background-color: var(--background-main-color);
+  color: var(--text-background-color);
+}
+
+.card-secondary {
+  background-color: var(--background-secondary-color);
+  color: var(--text-main-color);
+}
+
+.card-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.card-description {
+  text-align: center;
+}
+
+.advantages {
+  margin-bottom: 64px;
+}
+
+.advantages-title {
+  margin-bottom: 25px;
+}
+
+.advantages-description {
+  margin-bottom: 90px;
+}
+
+.advantage-list {
+  list-style: none;
+  padding: 0;
+}
+
+.recommendations {
+  margin-bottom: 96px;
+}
+
+.recommendations-title {
+  margin-bottom: 20px;
+}
+
+.recommendations-description {
+  margin-bottom: 64px;
+}
+
+.recommendation-list {
+  list-style: none;
+  padding: 0;
+}
+
+.hotel-search {
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+.hotel-search-description {
+  margin-bottom: 54px;
+}
+
+.hotel-search .button-primary {
+  font-size: 20px;
+}
+
+.subscription {
+  padding-top: 96px;
+  padding-bottom: 104px;
+  text-align: center;
+}
+
+.subscription-background {
+  background-image: url(../images/subscribe-background.jpg);
+  color: var(--text-background-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.subscription-section-description {
+  margin-bottom: 54px;
+}
+
+.subscription-form .form-input {
+  box-sizing: border-box;
+  width: 452px;
+  height: 52px;
+  margin: 0;
+  border-width: 0;
+  border-radius: 4px 0 0 4px;
+  padding: 12px 20px;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscription-button {
+  height: 52px;
+  border-radius: 0 4px 4px 0;
+  border-width: 0;
+  margin: 0;
+}
+
+.social-list {
+  display: block;
+  margin: 0;
+}
+
+.footer-contacts-phone {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-main-color);
+}
