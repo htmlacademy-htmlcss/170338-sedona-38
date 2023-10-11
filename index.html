@@ -10,57 +10,57 @@
   </head>
 
   <body>
-    <header class="main-header" data-test="header">
-      <div class="container header-container">
-        <a class="main-header-logo" href="index.html">
-          <img class="main-header-logo-image" src="images/city-logo.svg" width="140" height="70"
-            alt="Логотип города Седона" loading="lazy">
-        </a>
-        <nav class="main-navigation">
-          <ul class="main-navigation-list">
-            <li class="main-navigation-item main-navigation-item-current">
-              <a class="main-navigation-link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-navigation-item">
-              <a class="main-navigation-link" href="#">
-                О Седоне
-              </a>
-            </li>
-            <li class="main-navigation-item">
-              <a class="main-navigation-link" href="catalog.html">
-                Гостиницы
-              </a>
-            </li>
-          </ul>
-          <ul class="activities">
-            <li class="activities-item">
-              <a class="search-icon" href="#">
-                <span class="visually-hidden">
-                  Поиск
-                </span>
-              </a>
-            </li>
-            <li class="activities-item">
-              <a class="favorite-icon" href="#">
-                <span class="visually-hidden">
-                  Избранное
-                </span>
-              </a>
-              <span class="favorite-count">12</span>
-            </li>
-            <li class="activities-item">
-              <a class="button button-primary" href="#">
-                Хочу сюда!
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="main-index" data-test="main">
-      <div class="container">
+    <div class="container">
+      <header class="main-header" data-test="header">
+          <nav class="main-navigation">
+            <a class="main-header-logo" href="index.html">
+              <img class="main-header-logo-image" src="images/city-logo.svg" width="140" height="70"
+                alt="Логотип города Седона" loading="lazy">
+            </a>
+            <ul class="main-navigation-list">
+              <li class="main-navigation-item main-navigation-item-current">
+                <a class="main-navigation-link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="main-navigation-item">
+                <a class="main-navigation-link" href="#">
+                  О Седоне
+                </a>
+              </li>
+              <li class="main-navigation-item">
+                <a class="main-navigation-link" href="catalog.html">
+                  Гостиницы
+                </a>
+              </li>
+            </ul>
+            <div class="activities-wrapper">
+              <ul class="activities">
+                <li class="activities-item">
+                  <a class="search-icon" href="#">
+                    <span class="visually-hidden">
+                      Поиск
+                    </span>
+                  </a>
+                </li>
+                <li class="activities-item">
+                  <a class="favorite-icon" href="#">
+                    <span class="visually-hidden">
+                      Избранное
+                    </span>
+                  </a>
+                  <span class="favorite-count">12</span>
+                </li>
+              </ul>
+              <div class="activities-item">
+                <a class="button button-primary" href="#">
+                  Хочу сюда!
+                </a>
+              </div>
+            </div>
+          </nav>
+      </header>
+      <main class="main-index" data-test="main">
         <h1 class="visually-hidden">Добро пожаловать в город Седона</h1>
         <section class="hero" data-test="hero">
           <h2 class="visually-hidden">Седона</h2>
@@ -159,46 +159,46 @@
             <button class="button button-secondary subscription-button" type="submit">Подписаться</button>
           </form>
         </section>
-      </div>
-    </main>
-    <footer class="main-footer" data-test="footer">
-      <div class="container main-footer-nav">
-        <h2 class="visually-hidden">Контакты</h2>
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="social-item-link social-item-vk" href="https://vk.com/htmlacademy" rel="noreferrer noopener"
-              target="_blank">
-              <span class="visually-hidden">
-                Социальная сеть ВКонтакте
-              </span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-item-link social-item-telegram" href="https://t.me/htmlacademy" rel="noreferrer noopener"
-              target="_blank">
-              <span class="visually-hidden">
-                Социальная сеть Телеграмм
-              </span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-item-link social-item-youtube" href="https://www.youtube.com/user/htmlacademyru"
-              rel="noreferrer noopener" target="_blank">
-              <span class="visually-hidden">
-                Социальная сеть Ютуб
-              </span>
-            </a>
-          </li>
-        </ul>
-        <address>
-          <a class="footer-contacts-phone" href="tel:+78121212">+7 (812) 812-12-12</a>
-        </address>
-        <a class="footer-developer-link" href="https://htmlacademy.ru/" rel="noreferrer noopener" target="_blank">
-          <img class="footer-developer-logo" src="images/html-academy-logo.svg" width="115" height="33"
-            alt="Логотип компании Html Академии" loading="lazy">
-        </a>
-      </div>
-    </footer>
+      </main>
+      <footer class="main-footer" data-test="footer">
+        <div class="main-footer-nav">
+          <h2 class="visually-hidden">Контакты</h2>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-item-link social-item-vk" href="https://vk.com/htmlacademy" rel="noreferrer noopener"
+                target="_blank">
+                <span class="visually-hidden">
+                  Социальная сеть ВКонтакте
+                </span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-item-link social-item-telegram" href="https://t.me/htmlacademy" rel="noreferrer noopener"
+                target="_blank">
+                <span class="visually-hidden">
+                  Социальная сеть Телеграмм
+                </span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-item-link social-item-youtube" href="https://www.youtube.com/user/htmlacademyru"
+                rel="noreferrer noopener" target="_blank">
+                <span class="visually-hidden">
+                  Социальная сеть Ютуб
+                </span>
+              </a>
+            </li>
+          </ul>
+          <address>
+            <a class="footer-contacts-phone" href="tel:+78121212">+7 (812) 812-12-12</a>
+          </address>
+          <a class="footer-developer-link" href="https://htmlacademy.ru/" rel="noreferrer noopener" target="_blank">
+            <img class="footer-developer-logo" src="images/html-academy-logo.svg" width="115" height="33"
+              alt="Логотип компании Html Академии" loading="lazy">
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 
 </html>
