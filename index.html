@@ -12,124 +12,130 @@
   <body>
     <div class="container">
       <header class="main-header" data-test="header">
-          <nav class="main-navigation">
-            <a class="main-header-logo" href="index.html">
-              <img class="main-header-logo-image" src="images/city-logo.svg" width="140" height="70"
-                alt="Логотип города Седона" loading="lazy">
-            </a>
-            <ul class="main-navigation-list">
-              <li class="main-navigation-item main-navigation-item-current">
-                <a class="main-navigation-link" href="index.html">
-                  Главная
+        <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
+            <img class="main-header-logo-image" src="images/city-logo.svg" width="140" height="70"
+              alt="Логотип города Седона." loading="lazy">
+          </a>
+          <ul class="main-navigation-list">
+            <li class="main-navigation-item main-navigation-item-current">
+              <a class="main-navigation-link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="#">
+                О Седоне
+              </a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="main-navigation-link" href="catalog.html">
+                Гостиницы
+              </a>
+            </li>
+          </ul>
+          <div class="activities-wrapper">
+            <ul class="activities">
+              <li class="activities-item">
+                <a class="activities-link button-icon search-icon" href="#">
+                  <span class="visually-hidden">
+                    Поиск.
+                  </span>
                 </a>
               </li>
-              <li class="main-navigation-item">
-                <a class="main-navigation-link" href="#">
-                  О Седоне
-                </a>
-              </li>
-              <li class="main-navigation-item">
-                <a class="main-navigation-link" href="catalog.html">
-                  Гостиницы
+              <li class="activities-item">
+                <a class="activities-link button-icon favorite-icon" href="#">
+                  <span class="visually-hidden">
+                    Избранное.
+                  </span>
+                  <span class="favorite-count">
+                    12
+                  </span>
                 </a>
               </li>
             </ul>
-            <div class="activities-wrapper">
-              <ul class="activities">
-                <li class="activities-item">
-                  <a class="search-icon" href="#">
-                    <span class="visually-hidden">
-                      Поиск
-                    </span>
-                  </a>
-                </li>
-                <li class="activities-item">
-                  <a class="favorite-icon" href="#">
-                    <span class="visually-hidden">
-                      Избранное
-                    </span>
-                  </a>
-                  <span class="favorite-count">12</span>
-                </li>
-              </ul>
-              <div class="activities-item">
-                <a class="button button-primary" href="#">
-                  Хочу сюда!
-                </a>
-              </div>
+            <div class="activities-item">
+              <a class="activities-button button button-primary" href="#">
+                Хочу сюда!
+              </a>
             </div>
-          </nav>
+          </div>
+        </nav>
       </header>
       <main class="main-index" data-test="main">
-        <h1 class="visually-hidden">Добро пожаловать в город Седона</h1>
+        <h1 class="visually-hidden">Добро пожаловать в город Седона.</h1>
         <section class="hero" data-test="hero">
-          <h2 class="visually-hidden">Седона</h2>
+          <h2 class="visually-hidden">Седона.</h2>
           <img class="hero-title" src="images/hero-title.svg" width="458" height="352"
             alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" loading="lazy">
         </section>
         <section class="advantages" data-test="advantages">
-          <h2 class="visually-hidden">Преимущества города Седона</h2>
-          <p class="advantages-title section-title">Седона — небольшой городок в Аризоне,<br />заслуживающий большего!
+          <h2 class="visually-hidden">Преимущества города Седона.</h2>
+          <p class="advantages-title section-title">Седона — небольшой городок в Аризоне,<br /> заслуживающий большего!
           </p>
           <p class="advantages-description section-description">Рассмотрим причины, по которым Седона круче, чем
             Гранд-Каньон!</p>
           <ul class="advantage-list">
             <li class="advantage-item">
-              <div class="advantage-card advantage-item-large advantage-item-left card-primary">
-                <h3 class="card-title">Настоящий городок</h3>
-                <p class="card-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                <img src="images/genuine-city.jpg" width="800" height="385" alt="Дом в классическом стили в флагами"
+              <div class="advantage-item-image-left card-primary">
+                <div class="advantage-card">
+                  <h3 class="card-primary-title card-title">Настоящий городок</h3>
+                  <p class="card-primary-description card-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+                <img src="images/genuine-city.jpg" width="800" height="385" alt="Дом в классическом стили в флагами."
                   loading="lazy">
               </div>
             </li>
             <li class="advantage-item">
               <div class="advantage-card card-secondary">
-                <h3 class="card-title">Небольшая площадь</h3>
+                <h3 class="card-title">Небольшая<br/> площадь</h3>
                 <p class="card-description">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
             <li class="advantage-item">
-              <div class="advantage-card card-secondary">
-                <h3 class="card-title">Красивая дорога</h3>
+              <div class="advantage-card card-secondary-accent">
+                <h3 class="card-title">Красивая<br/> дорога</h3>
                 <p class="card-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="advantage-item">
               <div class="advantage-card card-secondary">
-                <h3 class="card-title">Мало туристов</h3>
+                <h3 class="card-title">Мало<br/> туристов</h3>
                 <p class="card-description">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
             <li class="advantage-item">
-              <div class="advantage-card advantage-item-large advantage-item-right card-primary">
-                <h3 class="card-title">Там есть мост дьявола</h3>
-                <p class="card-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-                <img src="images/devil-bridge.jpg" width="800" height="385" alt="Красивый вид на каньен" loading="lazy">
+              <div class="advantage-item-image-right card-primary">
+                <div class="advantage-card">
+                  <h3 class="card-primary-title card-title">Там есть<br/> мост дьявола</h3>
+                  <p class="card-primary-description card-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                </div>
+                <img src="images/devil-bridge.jpg" width="800" height="385" alt="Красивый вид на каньен." loading="lazy">
               </div>
             </li>
           </ul>
         </section>
         <section class="recommendations">
-          <h2 class="visually-hidden">Рекомендации для города Седона</h2>
+          <h2 class="visually-hidden">Рекомендации для города Седона.</h2>
           <p class="recommendations-title section-title">Приезжайте в Седону отдохнуть<br /> в комфорте и уюте!</p>
           <p class="recommendations-description section-description">Опытный персонал и качественное обслуживание!</p>
           <ul class="recommendation-list">
             <li class="recommendation-item">
-              <div class="recommendation-card card-secondary">
-                <h3 class="card-title">Жильё</h3>
+              <div class="recommendation-card card-secondary-accent">
+                <h3 class="card-title house-icon">Жильё</h3>
                 <p class="card-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </div>
             </li>
             <li>
               <div class="recommendation-card card-secondary">
-                <h3 class="card-title">Еда</h3>
+                <h3 class="card-title food-icon">Еда</h3>
                 <p class="card-description">Всегда заказывайте топовый фирменный бургер, вы не
                   разочаруетесь!</p>
               </div>
             </li>
             <li>
-              <div class="recommendation-card card-secondary">
-                <h3 class="card-title">Сувениры</h3>
+              <div class="recommendation-card card-secondary-accent">
+                <h3 class="card-title souvenirs-icon">Сувениры</h3>
                 <p class="card-description">Не только китайского, но и настоящего местного производства!
                 </p>
               </div>
@@ -137,7 +143,7 @@
           </ul>
         </section>
         <section class="hotel-search" data-test="search">
-          <h2 class="visually-hidden">Поиск гостиницы</h2>
+          <h2 class="visually-hidden">Поиск гостиницы.</h2>
           <p class="hotel-search-title section-title">Заинтересовались?</p>
           <p class="hotel-search-description section-description">Укажите предполагаемые даты поездки,</br>и мы покажем
             вам
@@ -162,13 +168,13 @@
       </main>
       <footer class="main-footer" data-test="footer">
         <div class="main-footer-nav">
-          <h2 class="visually-hidden">Контакты</h2>
+          <h2 class="visually-hidden">Контакты.</h2>
           <ul class="social-list">
             <li class="social-item">
               <a class="social-item-link social-item-vk" href="https://vk.com/htmlacademy" rel="noreferrer noopener"
                 target="_blank">
                 <span class="visually-hidden">
-                  Социальная сеть ВКонтакте
+                  Социальная сеть ВКонтакте.
                 </span>
               </a>
             </li>
@@ -176,7 +182,7 @@
               <a class="social-item-link social-item-telegram" href="https://t.me/htmlacademy" rel="noreferrer noopener"
                 target="_blank">
                 <span class="visually-hidden">
-                  Социальная сеть Телеграмм
+                  Социальная сеть Телеграмм.
                 </span>
               </a>
             </li>
@@ -184,7 +190,7 @@
               <a class="social-item-link social-item-youtube" href="https://www.youtube.com/user/htmlacademyru"
                 rel="noreferrer noopener" target="_blank">
                 <span class="visually-hidden">
-                  Социальная сеть Ютуб
+                  Социальная сеть Ютуб.
                 </span>
               </a>
             </li>
@@ -194,7 +200,7 @@
           </address>
           <a class="footer-developer-link" href="https://htmlacademy.ru/" rel="noreferrer noopener" target="_blank">
             <img class="footer-developer-logo" src="images/html-academy-logo.svg" width="115" height="33"
-              alt="Логотип компании Html Академии" loading="lazy">
+              alt="Логотип компании Html Академии." loading="lazy">
           </a>
         </div>
       </footer>
