@@ -65,6 +65,55 @@
   overflow: hidden;
 }
 
+/* Container Styles  */
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: var(--background-page-color);
+  color: var(--text-secondary-color);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-basic-color);
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 0 var(--background-shadow-color);
+  min-height: 100%;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.filters-container {
+  background-image: url(../images/catalog-background.jpg);
+  background-color: var(--background-basic-contrast-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 35px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 70px;
+  margin-bottom: 50px;
+}
+
+.catalog-wrapper {
+  padding: 0 70px;
+}
+
 /* Common styles */
 .section-title {
   color: var(--text-main-color);
@@ -112,6 +161,14 @@
   color: var(--text-background-color);
 }
 
+.button-large {
+  padding: 8px 50px;
+}
+
+.button-small {
+  padding: 8px 34px;
+}
+
 /* Cards Styles */
 .card-primary {
   background-color: var(--background-main-color);
@@ -145,57 +202,9 @@
   margin: 0;
 }
 
-.card-primary-title, .card-primary-description {
+.card-primary-title,
+.card-primary-description {
   color: var(--text-background-color);
-}
-
-/* Container Styles  */
-html {
-  height: 100%;
-}
-
-body {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  background-color: var(--background-page-color);
-  color: var(--text-secondary-color);
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--background-basic-color);
-  width: 1200px;
-  margin: 0 auto;
-  box-shadow: 0 0 15px 0 var(--background-shadow-color);
-  min-height: 100%;
-}
-
-.main-index {
-  flex-grow: 1;
-}
-
-.filters-container {
-  background-image: url(../images/catalog-background.jpg);
-  background-color: var(--background-basic-contrast-color);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 35px;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 70px;
-  margin-bottom: 50px;
-}
-
-.catalog-wrapper {
-  padding: 0 70px;
 }
 
 /* Navigation Section Styles */
@@ -206,7 +215,7 @@ body {
 
 .main-header-logo {
   margin-right: 28px;
-  margin-bottom: -5px;
+  margin-bottom: -6px;
   position: relative;
   z-index: 2;
   max-width: 100%;
@@ -247,10 +256,6 @@ body {
   padding: 20px 16px;
 }
 
-.button-icon {
-  position: relative;
-}
-
 .activities-wrapper {
   display: flex;
   align-items: center;
@@ -273,26 +278,25 @@ body {
   min-width: 18px;
   min-height: 18px;
   text-decoration: none;
-}
-
-.activities-button {
   position: relative;
-  padding: 8px 34px;
 }
 
-.search-icon::before {
+.activities-link::before {
   content: "";
   display: block;
   width: 18px;
   height: 18px;
+}
+
+.activities-button {
+  display: block;
+}
+
+.search-icon::before {
   background: url("../images/icons/search-icon.svg") no-repeat center / cover;
 }
 
 .favorite-icon::before {
-  content: "";
-  display: block;
-  min-width: 18px;
-  min-height: 17px;
   background: url("../images/icons/like-icon.svg") no-repeat center / cover;
 }
 
@@ -435,9 +439,8 @@ body {
 }
 
 .hotel-filters-form .button {
+  font-family: inherit;
   border-width: 0;
-  padding: 8px;
-  width: 191px;
 }
 
 .buttons-wrapper {
@@ -476,20 +479,17 @@ body {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  justify-content: flex-end;
   padding: 103px 85px;
   max-width: 400px;
   min-height: 385px;
   height: 100%;
 }
 
-.advantage-item-image-left {
+.advantage-item-wide {
   display: flex;
-  flex-direction: row;
 }
 
-.advantage-item-image-right {
-  display: flex;
+.advantage-item-wide-reverse {
   flex-direction: row-reverse;
 }
 
@@ -523,33 +523,24 @@ body {
   margin-bottom: 30px;
 }
 
-.house-icon::before {
+.card-with-icon::before {
   content: "";
   display: block;
   width: 75px;
   height: 72px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+.house-icon::before {
   background: url("../images/icons/hotels-large-icon.svg") no-repeat center / cover;
 }
 
 .food-icon::before {
-  content: "";
-  display: block;
-  width: 75px;
-  height: 72px;
-  margin: 0 auto;
-  margin-bottom: 30px;
   background: url("../images/icons/burger-large-icon.svg") no-repeat center / cover;
 }
 
 .souvenirs-icon::before {
-  content: "";
-  display: block;
-  width: 75px;
-  height: 72px;
-  margin: 0 auto;
-  margin-bottom: 30px;
   background: url("../images/icons/gift-large-icon.svg") no-repeat center / cover;
 }
 
@@ -610,33 +601,6 @@ body {
   gap: 8px;
 }
 
-.icon-card::after {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 16px;
-  margin: 0 auto;
-  background: url("../images/icons/grid-icon.svg") no-repeat center / cover;
-}
-
-.icon-slider::after {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 16px;
-  margin: 0 auto;
-  background: url("../images/icons/stack-icon.svg") no-repeat center / cover;
-}
-
-.icon-list::after {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 16px;
-  margin: 0 auto;
-  background: url("../images/icons/list-icon.svg") no-repeat center / cover;
-}
-
 .catalog-style-link {
   display: flex;
   justify-content: center;
@@ -647,11 +611,34 @@ body {
   border: 2px solid var(--input-element-color);
 }
 
+.catalog-style-link::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 16px;
+  margin: 0 auto;
+}
+
+.icon-card::after {
+  background: url("../images/icons/grid-icon.svg") no-repeat center / cover;
+}
+
+.icon-slider::after {
+  background: url("../images/icons/stack-icon.svg") no-repeat center / cover;
+}
+
+.icon-list::after {
+  background: url("../images/icons/list-icon.svg") no-repeat center / cover;
+}
+
 .catalog-style-current {
   border: 2px solid var(--icon-main-color);
 }
 
 .catalog-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
   list-style: none;
   padding: 0;
 }
@@ -681,19 +668,34 @@ body {
   font-size: 18px;
 }
 
-.catalog-actions {
-  display: flex;
-  margin-bottom: 16px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+.catalog-actions-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 16px;
+  column-gap: 20px;
 }
 
-.catalog-actions button {
+.button-favorite {
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-actions-wrapper button {
   border-radius: 4px;
-  width: 143px;
   min-height: 36px;
   border: 0;
+}
+
+.catalog-card-rating {
+  font-size: 16px;
+  background-color: var(--background-page-color);
+  padding: 8px 22px;
+  border-radius: 4px;
 }
 
 .button-more-info {
@@ -703,18 +705,6 @@ body {
 .catalog-card-link {
   text-decoration: none;
   color: var(--icon-main-color);
-}
-
-.catalog-rating {
-  display: flex;
-  justify-content: space-between;
-}
-
-.catalog-card-rating {
-  font-size: 16px;
-  background-color: var(--background-page-color);
-  padding: 8px 22px;
-  border-radius: 4px;
 }
 
 .navigation-pages {
@@ -750,7 +740,6 @@ body {
 
 .hotel-search .button-primary {
   font-size: 20px;
-  padding: 8px 50px;
 }
 
 /* Subscription Section Styles */
@@ -814,7 +803,6 @@ body {
   border-radius: 0 4px 4px 0;
   border-width: 0;
   margin: 0;
-  padding: 8px 50px;
 }
 
 /* Footer Styles */
@@ -855,29 +843,26 @@ body {
   height: 40px;
 }
 
-.social-item-vk::after {
+.social-item-link::after {
   content: "";
   display: block;
+  margin: auto;
+}
+
+.social-item-vk::after {
   width: 24px;
   height: 14px;
-  margin: auto;
   background: url("../images/icons/social-network-vk.svg") no-repeat center / cover;
 }
 
 .social-item-telegram::after {
-  content: "";
-  display: block;
   width: 18px;
   height: 16px;
-  margin: auto;
   background: url("../images/icons/social-network-telegram.svg") no-repeat center / cover;
 }
 
 .social-item-youtube::after {
-  content: "";
-  display: block;
   width: 22px;
   height: 17px;
-  margin: auto;
   background: url("../images/icons/social-network-youtube.svg") no-repeat center / cover;
 }
