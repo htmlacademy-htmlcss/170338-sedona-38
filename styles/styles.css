@@ -421,6 +421,7 @@ body {
 }
 
 .activities-link {
+  color: inherit;
   position: relative;
   display: block;
   padding: 22px 12px;
