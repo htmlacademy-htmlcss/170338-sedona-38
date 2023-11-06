@@ -130,6 +130,10 @@ body {
   padding-left: 70px;
 }
 
+.catalog {
+  margin-bottom: 59px;
+}
+
 .catalog-wrapper {
   padding: 0 70px;
 }
@@ -1340,10 +1344,6 @@ body {
   text-align: center;
 }
 
-.subscription-catalog {
-  padding-top: 156px;
-}
-
 .subscription-background {
   background-image: url(../images/subscribe-background.jpg);
   background-position: center;
@@ -1355,6 +1355,9 @@ body {
 
 .subscription .section-title {
   margin-bottom: 20px;
+}
+
+.subscription-background .section-title {
   color: var(--text-background-color);
 }
 
