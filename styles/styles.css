@@ -69,8 +69,8 @@
 
   /* Decorations */
   --current-item0decoration-color: #756257;
-  --transparent-decoration-color:  #00000000;
-  --inputs-shadow-color:  #00000040;
+  --transparent-decoration-color: #00000000;
+  --inputs-shadow-color: #00000040;
   --modal-window-fade-color: #F2F2F2CC;
   --modal-window-shadow-color: #00000026;
   --model-close-button-color: #e6e6e6;
@@ -225,7 +225,7 @@ body {
   color: var(--text-background-color);
 }
 
-.button-selected:hover{
+.button-selected:hover {
   background-color: var(--button-secondary-success-hover-color);
 }
 
@@ -351,7 +351,7 @@ body {
 
 }
 
-.main-header-logo:focus{
+.main-header-logo:focus {
   outline: 3px solid var(--border-input-color);
 }
 
@@ -445,7 +445,7 @@ body {
   margin: auto;
 }
 
-.activities-link:hover{
+.activities-link:hover {
   color: var(--text-links-hover-color);
 }
 
@@ -632,7 +632,7 @@ body {
   opacity: 30%;
 }
 
-.form-input-checkbox:checked + .form-input-checkbox-mark   {
+.form-input-checkbox:checked + .form-input-checkbox-mark {
   background-image: url(../images/icons/checked-icon.svg);
   background-position: center;
   background-size: 13px 11px;
@@ -1373,7 +1373,7 @@ body {
   box-shadow: 0 25px 50px var(--modal-window-shadow-color);
   border-radius: 30px;
   background-color: var(--background-basic-color);
-  padding: 64px  70px;
+  padding: 64px 70px;
   width: 715px;
 }
 
