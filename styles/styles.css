@@ -980,6 +980,7 @@ body {
   background-position: center right 20px;
   background-repeat: no-repeat;
   padding: 10px 20px;
+  padding-right: 40px;
   width: 292px;
   min-height: 49px;
   color: var(--text-secondary-color);
@@ -1317,6 +1318,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  max-width: 150px;
   list-style: none;
 }
 
