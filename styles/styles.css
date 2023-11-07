@@ -671,6 +671,7 @@ body {
 }
 
 .range-input {
+  -moz-appearance: textfield;
   box-sizing: border-box;
   background-color: var(--background-page-color);
   padding: 10px 40px 10px 20px;
@@ -974,6 +975,7 @@ body {
   margin-right: 70px;
   border: 2px solid var(--input-element-color);
   border-radius: 4px;
+  background: var(--background-basic-color);
   background-image: url(../images/icons/arrow-icon.svg);
   background-position: center right 20px;
   background-repeat: no-repeat;
