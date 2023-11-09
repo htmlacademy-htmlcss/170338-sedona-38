@@ -242,44 +242,44 @@ body {
   background-color: var(--button-disabled-color);
 }
 
-.button-transparent {
+.button-text-only {
   border: 3px solid var(--transparent-decoration-color);
   border-radius: 4px;
   background-color: var(--button-main-transparent-color);
   color: var(--text-background-color);
 }
 
-.button-transparent:hover {
+.button-text-only:hover {
   color: var(--text-background-hover-color);
 }
 
-.button-transparent:focus-visible {
+.button-text-only:focus-visible {
   outline: 3px solid var(--border-input-color);
 }
 
-.button-transparent:active {
+.button-text-only:active {
   border: 3px solid var(--transparent-decoration-color);
   color: var(--button-transparent-active-color);
 }
 
-.button-transparent:disabled {
+.button-text-only:disabled {
   opacity: 10%;
   border: 3px solid var(--transparent-decoration-color);
 }
 
-.button-transparent-accent {
+.button-text-only-accent {
   color: var(--text-main-color);
 }
 
-.button-transparent-accent:hover {
+.button-text-only-accent:hover {
   color: var(--card-border-decorative-color);
 }
 
-.button-transparent-accent:focus-visible {
+.button-text-only-accent:focus-visible {
   outline: 3px solid var(--border-input-color);
 }
 
-.button-transparent-accent:focus {
+.button-text-only-accent:focus {
   color: var(--card-border-decorative-color);
 }
 
