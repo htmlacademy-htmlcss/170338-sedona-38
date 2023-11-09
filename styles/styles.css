@@ -28,19 +28,19 @@
   /* Borders */
   --border-card-color: #e6e6e6;
   --border-input-color: #83b3d3;
-  --card-primary-border-decorative-color: rgba(255, 255, 255, 0.30);
-  --card-border-decorative-color: rgba(0, 0, 0, 0.30196);
+  --card-primary-border-decorative-color: rgba(255, 255, 255, 0.3);
+  --card-border-decorative-color: rgba(0, 0, 0, 0.3);
 
   /* Texts */
   --text-main-color: #000000;
   --text-secondary-color: #333333;
   --text-background-color: #ffffff;
   --text-background-hover-color: rgba(255, 255, 255, 0.6);
-  --text-background-active-color: rgba(255, 255, 255, 0.30);
-  --text-background-small-color: rgba(255, 255, 255, 0.30);
+  --text-background-active-color: rgba(255, 255, 255, 0.3);
+  --text-background-small-color: rgba(255, 255, 255, 0.3);
   --text-error-color: #ff5757;
   --text-links-hover-color: #756157;
-  --text-links-active-color: rgba(117, 61, 57, 0.30);
+  --text-links-active-color: rgba(117, 61, 57, 0.3);
 
   /* Buttons */
   --button-main-color: #756157;
@@ -52,7 +52,7 @@
   --button-secondary-hover-color: #68a2ca;
   --button-secondary-success-color: #7db54f;
   --button-secondary-success-hover-color: #6c9e42;
-  --button-transparent-active-color: rgba(255, 255, 255, 0.30);
+  --button-transparent-active-color: rgba(255, 255, 255, 0.3);
 
   /* Inputs */
   --input-main-color: #3f5e72;
@@ -64,7 +64,7 @@
   --icon-main-color: #000000;
   --icon-secondary-color: #83b3d3;
   --icon-secondary-hover-color: #68a2ca;
-  --icon-secondary-active-color: #68a2ca4d;
+  --icon-secondary-active-color: rgba(104, 162, 202, 0.3);
   --icon-secondary-selected-color: #7db54f;
 
   /* Decorations */
@@ -72,9 +72,9 @@
   --transparent-decoration-color: rgba(0, 0, 0, 0);
   --inputs-shadow-color: rgba(0, 0, 0, 0.25);
   --modal-window-fade-color: rgba(242, 242, 242, 0.8);
-  --modal-window-shadow-color: #00000026;
+  --modal-window-shadow-color: rgba(0, 0, 0, 0.15);
   --model-close-button-color: #e6e6e6;
-  --model-close-button-active-color: rgba(0, 0, 0, 0.30);
+  --model-close-button-active-color: rgba(0, 0, 0, 0.3);
 }
 
 html {
@@ -549,6 +549,8 @@ body {
 }
 
 .form-title {
+  margin: 0;
+  margin-bottom: 32px;
   color: var(--text-background-color);
   font-weight: 700;
   font-size: 20px;
@@ -575,11 +577,6 @@ body {
 
 .hotel-filters-form:last-child {
   margin-right: 0;
-}
-
-.form-title {
-  margin: 0;
-  margin-bottom: 32px;
 }
 
 .form-label {
